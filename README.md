@@ -5,32 +5,32 @@ This older PASCAL code was utilized in a series of papers published by astronome
 
 ### Compilation 
 The code can be compiled using Turbo Pascal on any Windows OS or with the FreePascal compiler (Linux, macOS, etc.). The root file is TILIN132.PAS. The command in the Linux terminal appears as follows:
-
+```
 fpc -Mtp TILIN132.PAS
-
+```
 Of course, you should be in the root directory of the project. The build procedure result is the TILIN132 file. 
 
 ### Utilization
 
 It is easy to execute:
-
+```
 ./TILIN132
-
+```
 The input.txt file contains a table with relative positions, including separations in arcsec (\rho) and positional angles in degrees (\theta) for the corresponding epochs (in years).
 
 Here is an example of the input.txt:
-
+```
 epoch (yr) \theta (deg) \rho (arcsec) 
 1836.21000 295.60397   2.50000
 1852.92000 292.50357   2.89000
 1857.90000 292.10344   2.63000
 1880.59000 295.70289   2.10000
 1891.84000 293.00262   2.04000
-
+```
 You can use your input.txt with your data according to the presented form.
 
 The calculation results, including the Campbell elements, will be saved in output.txt (see an example below).
-
+```
 t0            =  1949.885285185185185
 rho0          =     2.053027044710415
 theta0        =   310.995348392656718
@@ -58,7 +58,7 @@ all obs.=     0.139600983918518
 1852.92000    2.8900000  292.5035700    2.5823538  291.7476326    0.3076462    0.7559374   -2.6699429    1.1061215
 1857.90000    2.6300000  292.1034400    2.5609847  292.5560334    0.0690153   -0.4525934   -2.4367109    0.9896161
 1880.59000    2.1000000  295.7028900    2.4573199  296.4240501   -0.3573199   -0.7211601   -1.8922158    0.9107795
-
+```
 Rho(obs), Theta(obs) are taken from input.txt.
 Rho(c), Theta(c) are calculated using estimated a, e, T, P, omega, Node, and i.
 dRho,dTheta are O minus C (i.e. Rho(obs) - Rho(c) and Theta(obs)-Theta(c)).
