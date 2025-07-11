@@ -4,7 +4,7 @@
 This older PASCAL code was utilized in a series of papers published by astronomers from the Pulkovo Observatory. The author of this code is Igor Izmailov. A good instance of the paper based on the presented elaboration is  Izmailov, I.~S.\ 2019.\ The Orbits of 451 Wide Visual Double Stars.\ Astronomy Letters 45, 30–38. doi:10.1134/S106377371901002Xhttps://ui.adsabs.harvard.edu/abs/2019AstL...45...30I/abstract. The code is based on the Thiele–Innes method and allows for calculating the Campbell elements of the relative orbit for the binary star. 
 
 ### Compilation 
-The code can be compiled using Turbo Pascal on any Windows OS or with the FreePascal compiler (Linux, macOS, etc.). The root file is TILIN132.PAS. The command in the Linux terminal appears as follows:
+The code can be compiled using Turbo Pascal on any Windows OS (see tilin132.exe in the file set) or with the FreePascal compiler (Linux, macOS, etc.). The root file is TILIN132.PAS. The command in the Linux terminal appears as follows:
 ```
 fpc -Mtp TILIN132.PAS
 ```
